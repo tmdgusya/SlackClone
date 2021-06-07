@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/tmdgusya/SlackClone#readme",
   "dependencies": {
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
     "@loadable/component": "^5.15.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "@types/react": "^17.0.9",
@@ -39,6 +41,7 @@
     "@babel/preset-env": "^7.14.4",
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
+    "@types/loadable__component": "^5.13.3",
     "@types/node": "^15.12.1",
     "@types/react-router": "^5.1.15",
     "@types/react-router-dom": "^5.1.7",
