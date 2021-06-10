@@ -49,7 +49,10 @@ const config: Configuration = {
           ],
           env: {
             development: {
-              plugins: [require.resolve('react-refresh/babel')],
+              plugins: ['@emotion', require.resolve('react-refresh/babel')],
+            },
+            production: {
+              plugins: ['@emotion'],
             },
           },
         },
@@ -79,12 +82,12 @@ const config: Configuration = {
     historyApiFallback: true, // react router
     port: 3090,
     publicPath: '/dist/',
-    // proxy: {
-    //   '/api/': {
-    //     target: 'http://localhost:3095',
-    //     changeOrigin: true,
-    //   },
-    // },
+    proxy: {
+      '/api/': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+      },
+    },
   },
 };
 
